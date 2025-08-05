@@ -8,8 +8,6 @@ function AdminLogin() {
   const api = "http://localhost:8000/api/login"
  const navigate = useNavigate()
   const handleLogin = async (e) => {
-
-   
     e.preventDefault()
     try {
       const res = await axios.post(api, { email, password })

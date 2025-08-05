@@ -13,7 +13,8 @@ function Dashboard() {
   }
 
   if (!auth) {
-    return <Navigate to="/adminlogin" replace />
+   // return <Navigate to="/adminlogin" replace />
+   navigate("/adminlogin")
   }
 
   return (
